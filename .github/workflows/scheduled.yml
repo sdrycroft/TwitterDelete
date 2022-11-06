@@ -21,7 +21,7 @@ jobs:
           bundler-cache: true
 
       - name: Run TwitterDelete
-        run: bundle exec twitter_delete.rb --force --rts 1 --favs 1 --days 90 --user sdrycroft
+        run: bundle exec twitter_delete.rb --force --rts 2 --favs 2 --days 90 --user sdrycroft
         env:
           TWITTER_CONSUMER_KEY: ${{ secrets.TWITTER_CONSUMER_KEY }}
           TWITTER_CONSUMER_SECRET: ${{ secrets.TWITTER_CONSUMER_SECRET }}
